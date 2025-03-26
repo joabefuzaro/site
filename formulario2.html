@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação Formulário</title>
+</head>
+<body>
+    <h1>Continuação Formulário</h1>
+    <form method="post" action="grava.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            nome: <input type="text" value="Joabe" disabled> <input type="text" value="Joabe" readonly ><br>
+            Senha: <input type="password" maxlength="8" required>
+        </fieldset>
+        <select name="cidades">
+            <option value="1">Araxá</option>
+            <option value="1">Uberaba</option>
+            <option value="1">Igarapava</option>
+        </select><br>
+        <select name="cidades">
+        <optgroup label="Minas Gerais">
+            <option value="1">Araxá</option>
+            <option value="1">Uberaba</option>
+        </optgroup>
+        <optgroup label="São Paulo">
+            <option value="1">Igarapava</option>
+        </optgroup>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Data list</h2>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <textarea name="obs" cols="80" rows="10">
+        Digites suas obs aqui.
+    </textarea><br><br>
+    Quantidade?<input type="number" max="10" min="1">
+</body>
+</html>
