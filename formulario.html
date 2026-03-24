@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>HTML - Uso de Formulário</h1>
+    <form name="frm-contatos" method="post" action="grava.php" enctype="text/plain">
+        Nome: <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br>
+        Senha: <input type="password" name="senha" id="senha"><br>
+        Sexo: <label for="masculino"><input checked="checked" type="radio" name="sexo" value="M" id="masculino">Masculino</label>
+              <label for="feminino"><input type="radio" name="sexo" value="F" id="feminino">Feminino</label>
+              <br>
+              Esporte que você pratica:<br>
+              <label for="futebol"><input type="checkbox" name="esporte1" id="futebol">Futebol</label><br>
+              <label for="natacao"><input type="checkbox" name="esporte2" id="natacao">Natação</label><br>
+              <label for="basquete"><input type="checkbox" name="esporte3" id="basquete">Basquete</label><br>
+              Estado: <select name="cidades">
+                <optgroup label="Minas Gerais">
+                        <option value="UB">Uberaba</option>
+                        <option value="SP">Araxá</option>
+                </optgroup>
+                <optgroup label="São Paulo">
+                    <option value="IG">Igarapava</option>
+                    <option value="IT">Ituerava</option>
+                </optgroup>
+                
+                    
+              </select>
+
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
